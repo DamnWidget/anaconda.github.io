@@ -1,0 +1,12 @@
+---
+baseurl: "http://idamnwidget.github.io/anaconda"
+title: "Anaconda, the Python IDE for Sublime Text 3"
+copyright: "Copyright (c) 2014, Oscar Campos, all rights reserved"
+languageCode: "en-us"
+MetaDataFormat: "yaml"
+
+author:
+  name: "Oscar Campos"
+
+indexes:
+  category: "categories"
