@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <!-- open graph html -->
-<html class="no-js" lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8">
 
     {{ partial "meta.html" . }}
 
-    <base href="{{ .Site.BaseUrl }}"
-    <title> {{ .Title }} - damnwidget.github.io/anaconda </title>
+    <base href="{{ .Site.BaseUrl }}">
+    <title>{{ .Site.Title }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
     {{ partial "head_includes.html" . }}
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AnacondaST3</a>
+
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+            <ul class="nav navbar-nav">
+                <li><a href="anaconda/features/">Features</a></li>
+                <li><a href="anaconda/usage/">Usage</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="anaconda/about/">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Github <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://github.com/DamnWidget/anaconda">Anaconda Repo</a></li>
+                        <li><a href="https://github.com/DamnWidget/anaconda/issues">Anaconda Issues</a></li>
+                        <li><a href="https://github.com/DamnWidget/anaconda/wiki">Anaconda Wiki</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<section class="anaconda-header" id="content">
+  <div class="container">
+    <h1><span class="anaconda">Anaconda</span> <span class="ide">Python IDE</span></h1>
+    <p>Anaconda turns your Sublime Text 3 into a full featured Python development IDE</p>
+    <button type="button" class="btn btn-primary btn-large" href="https://github.com/DamnWidget/anaconda/archive/v1.3.4.tar.gz"><span class="glyphicon glyphicon-download-alt"></span> Download Anaconda</button>
+    <button type="button" class="btn btn-primary btn-large" href="./#"><span class="glyphicon glyphicon-cloud"></span> Use Package Control</button>
+  </div>
+</section>
+
+
+<section class="banner">
+  <div class="container">
+    <div class="anaconda-social">
+        <ul class="anaconda-social-buttons">
+            <li>
+                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=DamnWidget&amp;repo=anaconda&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"
+                ></iframe>
+            </li>
+            <li>
+                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=DamnWidget&amp;repo=anaconda&amp;type=fork&amp;count=true" width="96" height="20" title="Fork on GitHub"></iframe>
+            </li>
+            <li class="follow-btn">
+                <iframe
+                    src="//platform.twitter.com/widgets/follow_button.html?screen_name=damnwidget&amp;show_screen_name=true&amp;show_count=true"
+                    class="twitter-follow-button twitter-follow-button"
+                    style="width: 226px; height: 20px;"
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no">
+                </iframe>
+            </li>
+            <li class="tweet-btn">
+                <iframe
+                    src="https://platform.twitter.com/widgets/tweet_button.html?size=m&amp;count=horizontal&amp;lanf=en&amp;url=https%3A%2F%2Fdamnwidget.github.io%2Fanaconda&amp;via=damnwidget&amp;related=damnwidget&amp;text=Anaconda%20plugin%20turns%20your%20SublimeText%203%20into%20a%20full%20featured%20Python%20IDE&amp;hashtags=ST3"
+                    class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal"
+                    style="width: 109px; height: 20px;"
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no">
+                </iframe>
+            </li>
+        </ul>
+    </div>
+  </div>
+</section>
