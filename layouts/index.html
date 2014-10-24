@@ -17,6 +17,8 @@
                         <a href="#using-anaconda">Using Anaconda</a>
                         <ul class="nav">
                             <li><a href="#using-anaconda-installation">Installation</a></li>
+                            <li><a href="#using-anaconda-installation-manual">Manual Installation</a></li>
+                            <li><a href="#using-anaconda-installation-git">Install using Git</a></li>
                             <li><a href="#using-anaconda-per-project-config">Project Configuration</a></li>
                         </ul>
                     </li>
@@ -114,7 +116,7 @@
                                 <img src="/anaconda/img/screenshots/animations/mccabe.gif" alt="Anaconda McCabe Complexity Checker">
                                 <div class="carousel-caption">
                                     <h3>McCabe Complexity Checker</h3>
-                                    <p>Analyze your code with the Code Compexity Checker McCabe to detect overcomlex algorithms or functions</p>
+                                    <p>Analyze your code with the Code Complexity Checker McCabe to detect overcomplex algorithms or functions</p>
                                 </div>
                             </div>
 
@@ -129,29 +131,31 @@
                         </div>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <a class="left carousel-control" href="#carousel-features" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-features" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div>
 
                     <h3 class="anaconda-heading" id="anaconda-overview-performance">With performance in mind</h3>
-                    <p>The main goal of anaconda is to provide a high performance python development environment, this is why anaconda <strong>will never</strong> freeze your SublimeText 3 as everything in anaconda runs concurrent and asynchronous using an asynchronous <strong>client-server</strong> architecture.</p>
+                    <p>The <strong>main</strong> goal of anaconda is to provide a high performance python development environment, this is why anaconda <strong>will never</strong> freeze your SublimeText 3 as everything in anaconda runs concurrent and asynchronous using an asynchronous <strong>client-server</strong> architecture.</p>
 
                     <h3 class="anaconda-heading" id="anaconda-overview-out-of-the-box">Out of the box</h3>
-                    <p>The plugin can work out of the box with no configuration but we recommend to become familiar with the numerous anaconda's configuration options to fine tuning your installation to get all the power that Aanaconda can offer you.</p>
+                    <p>The plugin <strong>works out of the box</strong> with no configuration but we recommend to become familiar with the numerous anaconda's configuration options to fine tuning your installation to get all the power that Aanaconda can offer you.</p>
                     <p>By default, anaconda uses the python interpreter that is in your <code>PATH</code> environment variable, the most important configuration option is the <code>python_interpreter</code> option that allow the user to use a different python interpreter, for example, one that resides in a <strong>virtual environment</strong>:</p>
                     <blockquote class="code">
                         <pre class="prettyprint">{"python_interpreter": "~/.virtualenvs/myproject/bin/python"}</pre>
                     </blockquote>
 
+                    <strong>Note</strong>: for detailed information about how to <strong>properly configure</strong> anaconda to get the maximum of it, follow the <a href="anaconda/anaconda_settings/">Configure Anaconda the Right Way</a> section.
+
                 </div>
 
                 <div class="anaconda-section">
                     <h1 id="using-anaconda" class="page-header">Using Anaconda</h1>
-                    <p>To use anaconda you need to have installed Sublime Text 3 first, you can <a href="http://www.sublimetext.com/3" target="_blank">download</a> it from it's official website in case that you didn't do it already.</p>
+                    <p>To use anaconda you need to have installed Sublime Text 3 first, you can <a href="http://www.sublimetext.com/3" target="_blank">download</a> it from it's official website in case that you didn't already.</p>
 
                     <h3 class="anaconda-heading" id="using-anaconda-installation">Installation</h3>
                     <p>The easiest way to install anaconda is using <a href="https://sublime.wbond.net" target="_blank">Package Control</a> for SublimeText 3, in case that you don't have installed Package Control already, just open the SublimeText console (View -> Show Console) and copy and paste the code below, when done, press <code>enter</code>.</p>
@@ -160,12 +164,9 @@
                         <p><pre class="prettyprint">import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</pre></p>
                     </blockquote>
 
-                    <p>To install anaconda trough Package Control show the <code>Command Palette</code> (Tools -> Command Palette) and write <code>install package</code></p>
-                    <p><img src="/anaconda/img/screenshots/command_palette.png"></img></p>
-                    <p>then write <code>anaconda</code> in the input window popup that just appeared (that is the SublimeText 3 Command Palette) and press <code>enter</code></p>
-                    <p><img src="/anaconda/img/screenshots/install_anaconda.png"></img></p>
+                    {{ partial "package_control.html" . }}
 
-                    <h3>Manual installation</h3>
+                    <h3 id="using-anaconda-installation-manual">Manual installation</h3>
                     <p>You can download a compressed packed version of anaconda from the link below and decompress it into your SublimeText 3 packages directory</p>
 
                     <p><a href="https://github.com/DamnWidget/anaconda/archive/v1.3.4.tar.gz">https://github.com/DamnWidget/anaconda/archive/v1.3.4.tar.gz</a></p>
@@ -181,7 +182,7 @@
                         </p>
                     </blockquote>
 
-                    <h3>Install using Git</h3>
+                    <h3 id="using-anaconda-installation-git">Install using Git</h3>
                     <p>As third option, you can just go to your SublimeText 3 packages directory and clone the repo directly from Github, in that way you can easily install updates just running <code>git pull</code> in the directory.</p>
 
                     <blockquote class="code"><p>Just run <code>git clone https://github.com/DamnWidget/anaconda</code> inside your packages directory to install from git</p></blockquote>

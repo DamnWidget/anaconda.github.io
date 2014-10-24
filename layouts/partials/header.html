@@ -31,9 +31,10 @@
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
             <ul class="nav navbar-nav">
-                <li><a href="anaconda/features/">Features</a></li>
-                <li><a href="anaconda/usage/">Usage</a></li>
-
+                <li><a href="anaconda/IDE/">Powerful IDE</a></li>
+                <li><a href="anaconda/anaconda_settings">Configure Anaconda</a></li>
+                <li><a href="anaconda/tests_runner/">Tests Runner</a></li>
+                <li><a href="anaconda/vagrant/">Vagrant Integration</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
@@ -54,12 +55,14 @@
 
 </header>
 
+{{ partial "modal.html" . }}
+
 <section class="anaconda-header" id="content">
   <div class="container">
     <h1><span class="anaconda">Anaconda</span> <span class="ide">Python IDE</span></h1>
     <p>Anaconda turns your Sublime Text 3 into a full featured Python development IDE</p>
-    <button type="button" class="btn btn-primary btn-large" href="https://github.com/DamnWidget/anaconda/archive/v1.3.4.tar.gz"><span class="glyphicon glyphicon-download-alt"></span> Download Anaconda</button>
-    <button type="button" class="btn btn-primary btn-large" href="./#"><span class="glyphicon glyphicon-cloud"></span> Use Package Control</button>
+    <a role="button" class="btn btn-primary btn-large btn-download" href="https://github.com/DamnWidget/anaconda/archive/v1.3.4.tar.gz"><span class="glyphicon glyphicon-download-alt"></span> Download Anaconda v1.3.4</a>
+    <button type="button" class="btn btn-primary btn-large btn-pc" data-toggle="modal" data-target="#package-control"><span class="glyphicon glyphicon-cloud"></span> Use Package Control</button>
   </div>
 </section>
 
