@@ -158,11 +158,7 @@
                     <p>To use anaconda you need to have installed Sublime Text 3 first, you can <a href="http://www.sublimetext.com/3" target="_blank">download</a> it from it's official website in case that you didn't already.</p>
 
                     <h3 class="anaconda-heading" id="using-anaconda-installation">Installation</h3>
-                    <p>The easiest way to install anaconda is using <a href="https://sublime.wbond.net" target="_blank">Package Control</a> for SublimeText 3, in case that you don't have installed Package Control already, just open the SublimeText console (View -> Show Console) and copy and paste the code below, when done, press <code>enter</code>.</p>
-
-                    <blockquote class="code">
-                        <p><pre class="prettyprint">import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</pre></p>
-                    </blockquote>
+		    <p>The easiest way to install anaconda is using <a href="https://sublime.wbond.net" target="_blank">Package Control</a> for SublimeText 3, in case that you don't have installed Package Control already, just follow <a href="https://sublime.wbond.net/installation" target="_blank">the installation guide</a> in the Package Control website. 
 
                     {{ partial "package_control.html" . }}
 
@@ -188,9 +184,9 @@
                     <blockquote class="code"><p>Just run <code>git clone https://github.com/DamnWidget/anaconda</code> inside your packages directory to install from git</p></blockquote>
 
                     <h3 id="using-anaconda-per-project-config">Per Project Configuration</h3>
-                    <p>Anaconda run just fine out (always that you have a valid python interpreter configured and in your <code>PATH</code>) but it's also possible (and desirable) a finer <em>per project configuration</em>. You can configure anaconda in all the projects that you want.</p>
+                    <p>Anaconda run just fine out of the box (always that you have a valid python interpreter configured and in your <code>PATH</code>) but it's also possible (and desirable) a finer <em>per project configuration</em>. You can configure anaconda in all the projects that you want.</p>
 
-                    <p>To configure anaconda to behave differently in certain project you just have to edit the project configuration file (Project -> Edit Project) and add any configuration that you need into the <code>"settings"</code> key:</p>
+		    <p>To configure anaconda to behave differently in certain project you just have to edit the project configuration file <br>(Project -> Edit Project) and add any configuration that you need into the <code>"settings"</code> key:</p>
                     <blockquote class="code"><p><pre class="prettyprint">{
     "build_systems":
     [
