@@ -51,7 +51,7 @@ One of the first things that people reported is that sometimes when they were
 trying to auto-complete projects that used huge libraries like PyQt or NumPy,
  ST3 was unresponsive for a few seconds while the underlying `jedi` library
 was caching and processing the contents of the package. This was obviously
-the wrong approach and is why we decide to go asynchronous.
+the wrong approach and is why we decided to go asynchronous.
 
 Today, Anaconda is used by thousands of Python developers around the globe, and
 this number grows daily — more than any other Python-specialized
