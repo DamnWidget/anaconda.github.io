@@ -105,7 +105,7 @@ This is why Anaconda can perform multiple operations at the same time without
 any performance degradation, whether your project is a few files with
 a few lines or a Django monster with hundred of thousands of lines.
 
-## Why not for Sublime Text 2?
+## Why can't I use it with Sublime Text 2?
 
 Honestly, who wants to use ST2 when there's ST3? Seriously, the
 performance of ST3 is far better than ST2. The only reason not to switch used to be the lack of plugins,
