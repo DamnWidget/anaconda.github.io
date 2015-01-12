@@ -10,7 +10,7 @@ development IDE.
 # Supported Platforms
 
 Anaconda currently supports all three Sublime Text 3 platforms:
-Linux, OS X and Windows.  The status of the plugin in among these platforms is
+Linux, OS X and Windows.  The status of the plugin among these platforms is
 
 Platform | Status | Development | Maintainer
 -------- | ------ | ----------- | ----------
