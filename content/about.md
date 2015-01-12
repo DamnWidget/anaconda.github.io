@@ -96,7 +96,7 @@ ST3 GUI wait for any operation.
 
 When you are writing, the part of Anaconda that resides in your Sublime Text
 asks the JsonServer for completions, linting, code formating, documentation,
-function signatures. It also imports validation, and does much more concurrently through
+and function signatures. It also imports validation, and does much more concurrently through
 a real, non-blocking socket. The ST-residing part of Anaconda also registers a callback into Anaconda's callback
 system to interact with the Sublime Text 3 API when there is an available
 result coming back from the non-blocking socket.
