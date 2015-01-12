@@ -86,7 +86,7 @@ In this way, we solve two common problems in Sublime Text plugins:
 ### How does Anaconda solve these two problems?
 
 * In Anaconda, auto completion, linting, refactoring, code analytics, complexity
-checks and validations run using your system Python interpreter (or whatever you configure) with no limitations
+checks and validations run using your system Python interpreter (or whatever you configure) with no limitations.
 
 * In Anaconda, each Sublime Text window (if you have more than one open) uses
 its own standalone copy of Anaconda's JsonServer running as a separate process,
