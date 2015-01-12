@@ -54,7 +54,7 @@ was caching and processing the contents of the package. This was obviously
 the wrong approach and is why we decide to go asynchronous.
 
 Today, Anaconda is used by thousands of Python developers around the globe, and
-this number grows daily &mdash; more than any other Python-specialized
+this number grows daily — more than any other Python-specialized
 plugin for Sublime Text.
 
 # Anaconda Architecture
@@ -111,7 +111,7 @@ Honestly, who wants to use ST2 when there's ST3? Seriously, the
 performance of ST3 is far better than ST2. The only reason not to switch used to be the lack of plugins,
 but that's no longer a problem.
 
-In addition, maintaining a multi-ST project is a pain &mdash; not because
+In addition, maintaining a multi-ST project is a pain — not because
 you have to support Python2 and Python3 (JsonServer already supports them both),
 but because the ST2 and ST3 APIs are not compatible. Believe us,
 we already maintain a [multi-ST project](https://github.com/DamnWidget/SublimePySide),
