@@ -70,7 +70,7 @@ interpreter in Sublime Text 3 never gets stuck, stale or unresponsive.
 
 Anaconda detects if any Sublime Text 3 window has a Python buffer view. If there
 are any Python buffers, it starts a new standalone Anaconda JsonServer for that window.  This server
-knows how to speaks JSON with the part of Anaconda that is running in the
+knows how to speak JSON with the part of Anaconda that is running in the
 Sublime Text 3 runtime.
 
 Anaconda's JsonServers use the Python interpreter that is available in the
