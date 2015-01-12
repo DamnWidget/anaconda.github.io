@@ -90,7 +90,7 @@ checks and validations run using your system Python interpreter (or whatever you
 
 * In Anaconda, each Sublime Text window (if you have more than one open) uses
 its own standalone copy of Anaconda's JsonServer running as a separate process,
-so it can effectively use more than one core of your processor, not
+so it can effectively use more than one core of your processor, without
 blocking your Sublime Text embedded Python interpreter GIL or making the
 ST3 GUI wait for any operation.
 
