@@ -33,7 +33,7 @@ where the time is being spent.
 Are you tired of extensions that promise you nice features but make your
 Sublime Text freeze and block you from writing? Us too! This is
 why the main goal of Anaconda is performance. Anaconda will never freeze
-your Sublime Text, as everything in anaconda runs asynchronously.
+your Sublime Text, as everything in Anaconda runs asynchronously.
 
 It doesn't matter whether you're linting a file with a few hundred or a few
 thousand lines; Anaconda will work smoothly in each situation, helping you
