@@ -251,7 +251,7 @@ several reasons:
 
 1.- Anaconda does not use delayed queues to perform the linting work, instead
 of that, anaconda fire a single call to the linter methods `n` seconds after
-the last key was pressed by the user whole typing. Those `n` seconds can be
+the last key was pressed by the user while typing. Those `n` seconds can be
 configured by the user (by default is `0.5s`)
 2 .- Anaconda is totally asynchronous so it never blocks the Sublime Text GUI,
 because that, anaconda's linting is smooth and flawless.
