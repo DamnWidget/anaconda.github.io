@@ -58,7 +58,7 @@ exists yet
 #### Remove Python snippets from completions
 
 The user can also choose to don't show Python snippets in their autocompletion
-results setting the option `hide_snippers_on_completion` as `true` in the
+results setting the option `hide_snippets_on_completion` as `true` in the
 plugin or project configuration.
 
 #### Complete function and class parameters
@@ -119,6 +119,19 @@ The find usages command can be triggered in the following ways:
 * Command Palette : `Command Palette > Anaconda: Find`
 <br><br><br>
 
+# Display Signatures
+
+## How it works?
+
+When enabled, anaconda will show information about the methods that the
+programmer are typing into their Sublime Text 3 in the status bar. If
+the version of Sublime Text 3 in use is build 3070 or superior and the
+anaconda's settings `enable_signatures_tooltip` and `merge_signatures_and_doc`
+are set as `true`, anaconda will display a tooltip with useful information
+about the method or class being used.
+
+![](/anaconda/img/tooltips.png)
+
 # Get Documentation
 
 Anaconda can look for and show the user the docstring of whatever function,
@@ -131,7 +144,7 @@ signature and docstring in a bottom panel without lose focus form the buffer.
 
 As usual, anaconda asks the underlying jedi engine about the symbol under the
 cursor signature and docstring (if any) and then show it to the user using
-an additional panel.
+an additional panel or a tooltip.
 
 ### How to use it?
 
