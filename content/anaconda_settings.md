@@ -142,8 +142,11 @@ Exaple of project configuration (~/projects/my_project/MyProject.sublime-project
             "follow_symlinks": true,
             "path": "."
         }
-    ]
-    "python_interpreter": "~/virtualenvs/my_project/bin/python"
+    ],
+    "settings":
+    {
+        "python_interpreter": "~/virtualenvs/my_project/bin/python"
+    }
 }
 ```
 
