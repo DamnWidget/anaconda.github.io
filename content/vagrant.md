@@ -54,7 +54,7 @@ directory inside your vagrant guest.
 ### Configure your vagrant_server
 
 Now tat you have a fresh copy of the vagrant server, the next step is to
-edit the configuration file to adapt it to your meeds.
+edit the configuration file to adapt it to your needs.
 
 There is three different ways to configure the vagrant support depending
 of what your specific needs are.
