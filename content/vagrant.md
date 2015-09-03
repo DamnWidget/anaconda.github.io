@@ -23,7 +23,7 @@ your code. Some IDE utilities could not work (depending on the feature and
 how is your project hierarchy) when vagrant environments are in use. For
 example, the Goto IDE command will not work for third party libraries if
 you don't have those libraries installed in your development machine but
-only in the vagrant box (as Sublime Text 3 will not be able to found it
+only in the vagrant box (as Sublime Text 3 will not be able to find it
 to open it).
 
 ## Vagrant guest machine preparation
