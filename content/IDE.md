@@ -89,8 +89,7 @@ cursor is defined and jumps there.
 
 This feature can be triggered in several ways:
 
-* Linux: `super+g`
-* OS X and Windows: `ctrl+alt+g`
+* Keyboard: `ctrl+alt+g`
 * Vintage Mode (Command Mode): `gd`
 * Context Menu: `Anaconda > Goto Definition`
 * Command Palette: `Command Palette > Anaconda: Goto`
@@ -113,8 +112,7 @@ seconds to indicate the user where the cursor is located at.
 
 The find usages command can be triggered in the following ways:
 
-* Linux: `super+f`
-* OS X and Windows: `ctrl+alt+f`
+* Keyboard: `ctrl+alt+f`
 * Context Menu: `Anaconda > Find Usages`
 * Command Palette : `Command Palette > Anaconda: Find`
 <br><br><br>
@@ -150,8 +148,7 @@ an additional panel or a tooltip.
 
 The command can be triggered with:
 
-* Linux: `super+d`
-* OS X and Windows: `ctrl+alt+d`
+* Keyboard: `ctrl+alt+d`
 * Context Menu: `Anaconda > Show Documentation`
 * Command Palette: `Command Palatte > Anaconda: Show`
 
