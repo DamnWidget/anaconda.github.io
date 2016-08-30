@@ -42,9 +42,9 @@ Change `{config}` for the name of the config of your vm box (if your machine is 
 
 Change `{local_anaconda_installation}` to the path where anaconda is installed in your system, that will be:
 
-	* Linux: `~/.config/sublime-text-3/Packages/Anaconda`
-	* OS X: `~/Library/Application Support/Sublime Text 3/Packages/Anaconda`
-	* Windows: `%APPDATA%\\Roaming\\Sublime Text 3\\Packages\\Anaconda`
+- Linux: `~/.config/sublime-text-3/Packages/Anaconda`
+- OS X: `~/Library/Application Support/Sublime Text 3/Packages/Anaconda`
+- Windows: `%APPDATA%\\Roaming\\Sublime Text 3\\Packages\\Anaconda`
 
 Change `{mount_point}` to whatever directory inside your guest machine that you want to mount it, for example `/anaconda`
 
