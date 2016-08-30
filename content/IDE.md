@@ -297,7 +297,7 @@ thread so it doesn't block the Sublime Text GUI ever. The process is fired
 when the plugin detects that the user stopped typing for a determined and
 configurable period of time that can be defined setting the value of the
 configuration variable `anaconda_linter_delay`, that is `0.5s` default.
-* **Load and Save mode**: When `anaconda_linting_bahaviour` is set as
+* **Load and Save mode**: When `anaconda_linting_behaviour` is set as
 `load-save`, the linters are fired on load/save and focus gain only.
 * **Save only mode**: When `anaconda_linting_behaviour` is set as `save-only`
 the linters are fired on file saving only.
