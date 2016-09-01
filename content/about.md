@@ -75,7 +75,7 @@ Sublime Text 3 runtime.
 
 Anaconda's JsonServers use the Python interpreter that is available in the
 system `PATH`, but this behavior can be configured globally or per project (
-take a look at [Configuring Anaconda the Right Way](http://localhost:1313/anaconda/anaconda_settings/)
+take a look at [Configuring Anaconda the Right Way](./anaconda_settings/)
 for detailed information about that).
 
 In this way, we solve two common problems in Sublime Text plugins:
