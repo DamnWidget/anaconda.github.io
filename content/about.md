@@ -18,6 +18,7 @@ Platform | Status | Development | Maintainer
 **OS X**  | <span class="green">Stable</span> | <span class="green">Active</span>      | <a href="https://github.com/DamnWidget">@damnwidget</a>
 **Windows** | <span class="green">Stable</span> | <span class="green">Active</span>      |
 
+
 We are looking for a maintainer for the Windows platform. Currently,
 <a href="https://github.com/DamnWidget">@damnwidget</a> fixes bugs and solves
 incidents for Windows using a Virtual Machine; it works, but is not ideal.
