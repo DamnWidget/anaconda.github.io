@@ -130,6 +130,21 @@ about the method or class being used.
 
 ![](/anaconda/img/tooltips.png)
 
+# Display lint errors inline
+
+## How it works?
+
+Sublime Text 3 build 3124 introduced the `Phantoms` API that allows HTML
+annotations to be added to the view buffer by plugins. When enabled, Anaconda
+will show an HTML box in the line below the error containing information about
+it so the user does not need to hover the error or look at the message bar or
+show up the errors list.
+
+This feature is disabled by default, to enable it set the
+`anaconda_linter_phantoms` configuration option as `true` in the settings file.
+
+![](/anaconda/img/a7cbf944-0010-11e7-93e8-f66cebf68906.png)
+
 # Get Documentation
 
 Anaconda can look for and show the user the docstring of whatever function,
