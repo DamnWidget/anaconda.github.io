@@ -69,7 +69,7 @@ as follows:
 
 This option defines the test delimiter to use after your test module names,
 by default this is `:`, for example, if you set this option to `.` and your
-module nae is `"test_server.py"` it will try `test_server.ServerTest`
+module name is `"test_server.py"` it will try `test_server.ServerTest`
 
 ### test_virtualenv
 
