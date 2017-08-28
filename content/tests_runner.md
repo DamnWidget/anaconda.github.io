@@ -55,7 +55,7 @@ after run the test suite, this is useful to clean up
 **note**: again you can pass a list of commands with the same format than for
 the `test_before_command` option
 
-### test_command
+### test_command
 
 This is the command that anaconda is going to run in order to execute your
 test suite, this is `nosetests` by default. An example of configuration is
