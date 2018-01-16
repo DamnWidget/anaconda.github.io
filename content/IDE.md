@@ -165,7 +165,7 @@ The command can be triggered with:
 
 * Keyboard: `ctrl+alt+d`
 * Context Menu: `Anaconda > Show Documentation`
-* Command Palette: `Command Palatte > Anaconda: Show`
+* Command Palette: `Command Palette > Anaconda: Display Object Docs`
 
 # Refactor Rename
 
