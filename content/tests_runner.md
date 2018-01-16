@@ -138,7 +138,7 @@ after activate or deactivate your virtual environment.
         "test_command": "trial",
         "test_delimeter": ".".  // trial uses "." as delimeter
         "test_project_path": "myproject",
-        "test_before_command": "source $HOME/.virtualenvs/myproject/bin/python",
+        "test_before_command": "source $HOME/.virtualenvs/myproject/bin/activate",
         "test_after_command": "deactivate"
     }
 }
